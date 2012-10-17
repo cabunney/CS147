@@ -12,12 +12,21 @@
 	</head>
 
 	<body>
-	
+
 		<div class="banner"></div>
 		
 		<table>
-		<!-- This is where we'll put all our content -->
-		
+		 <?php
+			include("config.php");
+			$query = "select * from books";
+			$result = mysql_query($query);
+			while ($row = mysql_fetch_assoc($result)) {
+				echo "<p>".$row["title"]." by ".$row["author"]."</p>";
+				echo "<img src='".$row["image"]."' />";
+			}
+		?>
+			
+					
 		</table>
 		
 		<script type="text/javascript">
