@@ -23,9 +23,6 @@
 		<?php
 		
 			include("config.php");
-			// Let's put in the email function somewhere here
-			// but really it could be anywhere
-
 			function sendmail($email, $name, $title)
 			{
 			    
@@ -51,6 +48,7 @@
 			// Insert into orders
 			// but oops query is not defined... yet
 			
+			$query = "";
 			
 			$result = mysql_query($query);
 			

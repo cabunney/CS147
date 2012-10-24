@@ -12,25 +12,22 @@
 	</head>
 
 	<body>
-
 		<div class="banner"></div>
 		<?php
 		include("menu.php");
 		?>
+		
 		<table>
-
-		 <?php
+		<?php
 			include("config.php");
-			$query = "select * from books";
+			$query = "SELECT * FROM books";
 			$result = mysql_query($query);
 			while ($row = mysql_fetch_assoc($result)) {
-				echo "<p>".$row["title"]." by ".$row["author"]."</p>";
-				echo "<img src='".$row["image"]."' />";
-			}
-		?>
-			
-					
-
+				echo "<tr><td><h2>".$row["title"]."</h2>";
+				echo "<p class='author'>".$row["author"]."</p>";
+				echo "<td><img width='100' class='pretty' src='".$row["image"]."' /></td></td>";
+			} 
+			?>
 		</table>
 		
 		<script type="text/javascript">
