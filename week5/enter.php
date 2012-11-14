@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
 	<link rel="stylesheet" href="style.css" />
 	<link rel="apple-touch-icon" href="appicon.png" />
-	<link rel="apple-touch-startup-image" href="startup.png">
+	<link rel="apple-touch-startup-image" href="startup.png" />
 	
 	<script src="jquery-1.8.2.min.js"></script>
 	<script src="jquery.mobile-1.2.0.js"></script>
@@ -31,7 +31,7 @@
 		
 		<?php
 		// This is a hack. You should connect to a database here.
-		if ($_POST["username"] == "oi") {
+		if ($_POST["username"] == "test" && $_POST["password"] == "test") {
 			?>
 			<script type="text/javascript">
 				// Save the username in local storage. That way you
@@ -53,8 +53,8 @@
 		<ul>
 			<li><a href="index.php" id="home" data-icon="custom">Home</a></li>
 			<li><a href="login.php" id="key" data-icon="custom" class="ui-btn-active">Login</a></li>
-			<li><a href="filter.php" id="beer" data-icon="custom">Filter</a></li>
-			<li><a href="#" id="skull" data-icon="custom">Settings</a></li>
+			<li><a href="filter.php" id="filter" data-icon="custom">Filter</a></li>
+			<li><a href="#" id="settings" data-icon="custom">Settings</a></li>
 		</ul>
 		</div>
 	</div>

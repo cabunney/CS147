@@ -1,3 +1,14 @@
+<?php
+include 'Mobile_Detect.php';
+$detect = new Mobile_Detect();
+//Basic usage, looking for mobile devices or tablets:
+
+if (!$detect->isMobile()) {
+    // Any mobile device.
+    header("Location: mobiletest/iphone.php?url=stanford.edu/~cabunney/cgi-bin/week8/sandbox/mobile.php");
+}
+?>
+
 <!DOCTYPE html> 
 <html>
 

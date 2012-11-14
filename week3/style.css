@@ -67,15 +67,15 @@ h2 {
 .blue { color: #003399 }
 a { color: #fff }
 .coda {
-	text-transform:uppercase;
-	text-decoration:none;
-	
-	font-size:16px;
-	font-weight:300;
+    text-transform:uppercase;
+    text-decoration:none;
+    
+    font-size:16px;
+    font-weight:300;
 }
 .chzn-select { width: 200px }
 .forminput {
-	width:200px;
+    width:200px;
     background: #fff url('chosen-sprite.png') no-repeat 100% -22px;
     background: url('chosen-sprite.png') no-repeat 100% -22px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
     background: url('chosen-sprite.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
@@ -138,25 +138,25 @@ img.pretty {
 
 .red.awesome,
 .red.awesome:visited {
-	background-color: #e33100 
+    background-color: #e33100 
 }
 .red.awesome:hover { 
-	background-color: #872300 
+    background-color: #872300 
 }
 .orderarea {
-	float:left;
-	padding:10px;
+    float:left;
+    padding:10px;
 }
 table {
-	padding:5px;
+    padding:5px;
 }
 label {
-	float:left;
-	padding:10px;
+    float:left;
+    padding:10px;
 }
 .inventory {
-	margin:0;
-	padding:0;
-	color:#aaa;
-	font-size:12px;
+    margin:0;
+    padding:0;
+    color:#aaa;
+    font-size:12px;
 }

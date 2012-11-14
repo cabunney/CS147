@@ -13,19 +13,19 @@
 	</head>
 
 	<body>
-	
-		<div class="banner"></div>
+	
+		<!-- <div class="banner"></div>
 		<?php
 		include("menu.php");
 		?>
-		
+		 -->
 		<div class="orderarea">
 		<?php
 		
 			include("config.php");
 			// Let's put in the email function somewhere here
 			// but really it could be anywhere
-
+			
 			function sendmail($email, $name, $title)
 			{
 			    
@@ -41,15 +41,14 @@
 			    mail($to, $subject, $message, $headers);
 			    
 			}
-			
+
 			// Take in parameters
 			$name = $_POST["name"];
 			$book = $_POST["book"];
 			$email = $_POST["email"];
 			$t = time();
 			
-			// Insert into orders
-			// but oops query is not defined... yet
+			$query = "INSERT INTO orders (name, email, time, book) VALUES ('$name', '$email', '$t', '$book')";
 			
 			
 			$result = mysql_query($query);
